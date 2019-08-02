@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily restic backup timer for the user space of `can`
+
+[Timer]
+WakeSystem=false
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
