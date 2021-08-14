@@ -1,0 +1,9 @@
+[Unit]
+Description=Daily restic backup for the user space of `can`
+
+[Service]
+Type=simple
+Nice=19
+IOSchedulingClass=2
+IOSchedulingPriority=7
+ExecStart=/home/can/.restic/backup.sh
