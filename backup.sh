@@ -1,5 +1,7 @@
-#!/usr/bin/env bash
-source .00-restic_credentials
-sh ./.01-restic_backup.sh
-sh ./.02-restic_forget.sh
-sh ./.03-restic_check.sh
+#!/bin/sh
+
+source /home/can/.credentials/restic-credentials
+
+sh /home/can/.restic/.01-restic_backup.sh
+sh /home/can/.restic/.02-restic_forget.sh
+sh /home/can/.restic/.03-restic_check.sh
